@@ -1,0 +1,11 @@
+:root {
+  --color-bg: #050711;
+  --color-surface: rgba(8, 13, 30, 0.78);
+  --color-surface-strong: rgba(14, 20, 42, 0.92);
+  --color-text: #e5f7ff;
+  --color-muted: #b8c7d9;
+  --color-neon-cyan: #7df9ff;
+  --color-neon-violet: #a78bfa;
+  --shadow-neon: 0 0 60px rgba(29, 233, 255, 0.12);
+  --radius-panel: 2rem;
+}

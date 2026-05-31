@@ -1,1 +1,32 @@
-.claude/*
+.claude
+*.pdf
+
+# Runtime environment files
+**/.env
+**/.env.*
+!**/.env.example
+
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+coverage/
+playwright-report/
+test-results/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Local databases and generated files
+*.sqlite
+*.sqlite3
+*.db
+app/server/prisma/dev.db
+app/server/generated/
+app/server/src/generated/
+
+claude-kit-log
+google-config

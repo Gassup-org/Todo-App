@@ -1,0 +1,21 @@
+{
+  "name": "todo-app-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Scalable React and Express todo app workspace.",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace app/server\" \"npm run dev --workspace app/client\"",
+    "build": "npm run build --workspace app/server && npm run build --workspace app/client",
+    "test": "npm run test --workspace app/server && npm run test --workspace app/client",
+    "lint": "npm run lint --workspace app/server && npm run lint --workspace app/client",
+    "typecheck": "npm run typecheck --workspace app/server && npm run typecheck --workspace app/client",
+    "secret:scan": "git diff --cached --check && git status --short"
+  },
+  "workspaces": [
+    "app/client",
+    "app/server"
+  ],
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
