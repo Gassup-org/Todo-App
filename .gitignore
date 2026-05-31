@@ -1,1 +1,11 @@
-.claude/*
+.claude
+node_modules
+.env
+.env.*
+!.env.example
+dist
+coverage
+.vite
+.DS_Store
+npm-debug.log*
+google-config

@@ -1,0 +1,12 @@
+process.env.NODE_ENV = 'test';
+process.env.PORT = '4001';
+process.env.DATABASE_URL = 'postgresql://todo:todo_password@localhost:5432/todo_app_test';
+process.env.CORS_ORIGIN = 'http://localhost:5173';
+process.env.CLIENT_URL = 'http://localhost:5173';
+process.env.JWT_SECRET = 'test_secret_with_minimum_length';
+process.env.JWT_EXPIRES_IN = '7d';
+process.env.GOOGLE_CLIENT_ID = 'test_google_client_id';
+process.env.GOOGLE_CLIENT_SECRET = 'test_google_client_secret';
+process.env.GOOGLE_REDIRECT_URI = 'http://localhost:4001/api/v1/auth/google/callback';
+process.env.EMAIL_FROM = 'no-reply@test.local';
+process.env.REMINDER_CRON = '*/5 * * * *';
